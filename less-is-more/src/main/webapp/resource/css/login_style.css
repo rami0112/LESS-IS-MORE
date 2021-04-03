@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /* -ms-user-select: none; 
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none; */ /*�뱶�옒洹� 諛⑹�*/
+}
+
+body {
+    width: 1500px;
+    margin: auto;
+    padding: 0px 100px 0px 100px;
+    /* border: 1px solid red; */
+}
+
+header {
+    width: 1500px;
+    height: 125px;
+    margin-top: 25px;
+    position: fixed;
+    /* border: 1px solid red; */
+}
+
+#logo {
+    text-align: center;
+    line-height: 125px;
+    /* border: 1px solid red; */
+}
+
+/* 濡쒓렇�씤 */
+.login {
+    margin-top: 250px;
+    margin-left: 550px;
+    text-align: center;
+    display: inline-block;
+    /* border: 1px solid blue; */
+}
+
+.login .id {
+	display: block;
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+    border-bottom: 1px solid black;
+}
+
+.login .pw {
+	display: block;
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+    border-bottom: 1px solid black;
+}
+
+.errors {
+	text-align: left;
+}
+
+#signin_btn {
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid gray;
+    outline: none;
+    font-size: 12px;
+}
+
+#create_btn {
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid gray;
+    outline: none;
+    font-size: 12px;
+}
+
+#signin_btn:hover {
+    border: 1px solid black;
+}
+
+#create_btn:hover {
+    border: 1px solid black;
+}
+
+#forgot {
+    margin-top: 15px;
+    font-size: 12px;
+    color: gray;
+}
+
+#forgot a {
+    text-decoration: none;
+    color: gray;
+}
+
+footer {
+    height: 500px;
+    border-top: 1px solid black;
+    margin-top: 300px;
+}
+
+/*----------------------------------*/
+
+
+@media only screen and (max-width: 600px) { };

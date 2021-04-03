@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace = "mapper.BoardMapper">
+
+	<select id="selectBoard" parameterType="hashMap" resultType="boardVO">
+		select *
+		from board
+		
+		<if test='searchType.equals("title")'>
+			where title like concat('%', #{keyword}, '%')
+		</if>
+		
+		<if test='searchType.equals("content")'>
+			where content like concat('%', #{keyword}, '%')
+		</if>
+		
+		<if test='searchType.equals("title_content")'>
+			where title like concat('%', #{keyword}, '%')
+				or content like concat('%', #{keyword}, '%')
+		</if>
+		
+		<if test='searchType.equals("m_id")'>
+			where m_id like concat('%', #{keyword}, '%')
+		</if>
+		
+		order by reg_date desc
+		limit #{displayPost}, #{postNum}
+	</select>
+	
+	<select id="selectBoardDetail" parameterType="long" resultType="boardVO">
+		select *
+		from board
+		where board_no = #{board_no}
+	</select>
+	
+	<select id="selectCount" parameterType="hashMap" resultType="int">
+		select count(*)
+		from board
+		
+		<if test='searchType.equals("title")'>
+			where title like concat('%', #{keyword}, '%')
+		</if>
+		
+		<if test='searchType.equals("content")'>
+			where content like concat('%', #{keyword}, '%')
+		</if>
+		
+		<if test='searchType.equals("title_content")'>
+			where title like concat('%', #{keyword}, '%')
+				or content like concat('%', #{keyword}, '%')
+		</if>
+		
+		<if test='searchType.equals("m_id")'>
+			where m_id like concat('%', #{keyword}, '%')
+		</if>
+		
+	</select>
+	
+	
+	<insert id="insertBoard" parameterType="boardVO">
+		insert into board (
+			title
+			, content
+			, m_id
+			, reg_date
+		) values (
+			#{title}
+			, #{content}
+			, #{m_id}
+			, now()
+		)
+	</insert>
+	
+	<update id="updateBoard" parameterType="boardVO">
+		update board
+		set title = #{title}
+		, content = #{content}
+		where board_no = #{board_no} 
+	</update>
+	
+	<delete id="deleteBoard" parameterType="long">
+		delete from board
+		where board_no = #{board_no}
+	</delete>
+	
+	
+	
+</mapper>

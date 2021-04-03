@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /* -ms-user-select: none; 
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none; */ /*�뱶�옒洹� 諛⑹�*/
+}
+
+body {
+    width: 1500px;
+    margin: auto;
+    padding: 0px 100px 0px 100px;
+    /* border: 1px solid red; */
+}
+
+header {
+    width: 1500px;
+    height: 125px;
+    margin-top: 25px;
+    position: fixed;
+    /* border: 1px solid red; */
+}
+
+#logo {
+    text-align: center;
+    line-height: 125px;
+    /* border: 1px solid red; */
+}
+
+/* �쉶�썝媛��엯 */
+#join {
+    width: 500px;
+    display: inline-block;
+    margin-left: 500px;
+    margin-top: 250px;
+    margin-bottom: 20px;
+}
+
+#join label {
+	font-size: 12px;
+    margin-bottom: 5px;
+}
+
+#join_btn {
+    width: 75px;
+    height: 25px;
+    outline: none;
+	float: right;
+    border: 1px solid gray;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.create_btn {
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 40px;
+    float: right;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid gray;
+    outline: none;
+    font-size: 12px;
+}
+
+.id_in {
+    width: 400px;
+    height: 25px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    float: left;
+}
+
+.tel_in {
+    width: 125px;
+    height: 25px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    float: left;
+}
+
+.in {
+    width: 500px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+}
+
+.left {
+    float: left;
+}
+
+::placeholder {
+    font-size: 10px;
+}
+
+footer {
+    height: 500px;
+    border-top: 1px solid black;
+    margin-top: 300px;
+}
+
+@media only screen and (max-width: 600px) { };

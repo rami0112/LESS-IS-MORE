@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /* -ms-user-select: none; 
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none; */ /*�뱶�옒洹� 諛⑹�*/
+}
+
+body {
+    width: 1500px;
+    margin: auto;
+    padding: 0px 100px 0px 100px;
+    /* border: 1px solid red; */
+}
+
+header {
+    width: 1500px;
+    height: 125px;
+    margin-top: 25px;
+    position: fixed;
+    /* border: 1px solid red; */
+}
+
+#logo {
+    text-align: center;
+    line-height: 125px;
+    /* border: 1px solid red; */
+}
+
+.top_menu {
+    position: absolute;
+    right: 0px;
+}
+
+.top_menu li {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 30px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    /* border: 1px solid red; */
+}
+
+.top_menu li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* 寃뚯떆�뙋 */
+table {
+    width: 1200px;
+    margin-top: 200px;
+    display: inline-block;
+    margin-left: 150px;
+    border-collapse: collapse;
+    /*border: 1px solid red;*/ 
+}
+
+th {
+    height: 50px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    border-top: 2px solid black;
+    border-bottom: 1px solid gray;
+}
+
+.no {
+    width: 150px;
+    text-align: center;
+}
+
+.title {
+	width: 750px;
+	color: black;
+}
+
+.title a {
+	color: black;
+	text-decoration: none;
+}
+
+.id {
+	width: 200px;
+    text-align: center;
+}
+
+.date {
+	width: 150px;
+    text-align: center;
+}
+
+td {
+    height: 50px;
+    border-bottom: 1px solid gray;
+}
+
+.page {
+	width: 1200px;
+	margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.page li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+footer {
+    height: 500px;
+    margin-top: 300px;
+    border-top: 1px solid black;
+}
+
+.write_btn {
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid gray;
+    outline: none;
+    font-size: 12px;
+}
+
+.page li a {
+	text-decoration: none;
+	color: black;
+}
+
+.active {
+	font-weight: 900;
+}
+.search_btn {
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid gray;
+    outline: none;
+    font-size: 12px;
+}
+
+.in {
+    width: 950px;
+    height: 100px;
+    outline: none;
+    border: none;
+    margin-right: 50px;
+}
+.search_in {
+    width: 200px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    float: left;
+    margin-right: 20px;
+}
+
+select {
+	width: 100px;
+	padding: .8em .5em;
+	border: 1px solid #999;
+	outline: none;
+	background: url('../images/arrow.jpg') no-repeat 95% 50%;
+	border-radius: 0px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	float: left;
+	margin-right: 20px;
+}
+
+.searchDiv {
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.textarea {
+	width: 1000px;
+	margin: 20px;
+	outline: none;
+}
+
+@media only screen and (max-width: 600px) { };
